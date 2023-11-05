@@ -29,9 +29,9 @@ const leaderboard = ['Harry', 'Lua', 'Hermione', 'Bellatrix'];
 //leaderboard.unshift('Iman');
 
 //leaderboard.shift()
-console.log(leaderboard.shift())
-console.log(leaderboard);
-console.log(leaderboard.length);
+//console.log(leaderboard.shift())
+//console.log(leaderboard);
+//console.log(leaderboard.length);
 
 
 //Exercise - 
@@ -41,9 +41,34 @@ const planets = ['The Moon', 'Venus', 'Earth', 'Mars', 'Jupiter'];
 
 
 //Add in "Saturn" at the very end of the planets array
-console.log(planets.push('Saturn'));
-console.log(planets);
+//console.log(planets.push('Saturn'));
+//console.log(planets);
 
 //Add "Mercury" as the first element in the planets array.
-console.log(planets.unshift('Mercury'));
-console.log(planets);
+//console.log(planets.unshift('Mercury'));
+//console.log(planets);
+
+//Concate array -- Join two arrays
+let nerArray = leaderboard.concat(planets)
+
+
+//indexOf -- Know index of aný elements in array
+//console.log(nerArray)
+//console.log(nerArray.indexOf('Mercury'));
+//console.log(nerArray.indexOf('Jupiter'));
+
+//reverse the array
+//console.log(planets.reverse())
+
+//console.log(planets);
+
+//let newPlanets = planets.slice(1, 2);
+//console.log(newPlanets);
+
+
+//let newSplicedPlanets = planets.splice(1, 0, 'Mercury', 'Earth', 'Galaxy');
+//console.log(newSplicedPlanets);
+
+
+let newSplicedPlanets = planets.splice(1, 3);
+console.log(newSplicedPlanets);
