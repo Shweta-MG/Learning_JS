@@ -70,5 +70,34 @@ let nerArray = leaderboard.concat(planets)
 //console.log(newSplicedPlanets);
 
 
-let newSplicedPlanets = planets.splice(1, 3);
-console.log(newSplicedPlanets);
+//let newSplicedPlanets = planets.splice(1, 3);
+//console.log(newSplicedPlanets);
+
+let newSplicedPlanets = planets.splice(1, 0, 'Trying to find a new planet', 'OMG I found that');
+//console.log(newSplicedPlanets);
+//console.log(planets)
+
+
+
+//Multi dimensional arrays -- can store another arrays or objects
+const home = [
+    ['Bedroom', 'Dining Room', 'Drawing room', 'Bath room', 'Foray', 'Kitchen'],
+    ['Bed', 'Almirah', 'flowers', 'flower pot']
+]
+
+//console.log(home);
+
+
+//I've provided you with an array called airplaneSeats, which represents the rows of seats on a flight.  Our friend Hugo is looking to book a seat on our flight. Fortunately, there is one middle seat available (it's set to null currently).  Please update the array element that is currently null, to instead be "Hugo".
+
+
+const airplaneSeats = [
+    ['Ruth', 'Anthony', 'Stevie'],
+    ['Amelia', 'Pedro', 'Maya'],
+    ['Xavier', 'Ananya', 'Luis'],
+    ['Luke', null, 'Deniz'],
+    ['Rin', 'Sakura', 'Francisco']
+];
+
+airplaneSeats[3][1] = 'Hugo'
+console.log(airplaneSeats);
