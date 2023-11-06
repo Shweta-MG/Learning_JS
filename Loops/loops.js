@@ -13,7 +13,7 @@ for (let i = 0; i <= 10; i++){
 
 //Even numbers
 for (let i = 0; i <= 10; i += 2){
-    //console.log(i)
+    console.log(i)
 }
 
 //print odd numbers
@@ -42,5 +42,50 @@ for (let i = 25; i >= 0; i -= 5){
 //print the square of initial value
 
 for (let i = 5; i <= 1000; i *= i) {
-    console.log(i)
+    //console.log(i)
 };
+
+//loop through array
+const stringArray = [
+    "apple",
+    "banana",
+    "cherry",
+    "date",
+    "elderberry",
+    "fig",
+    "grape",
+    "honeydew",
+    "kiwi",
+    "lemon",
+    "mango",
+    "nectarine",
+    "orange",
+    "papaya",
+    "quince",
+    "raspberry",
+    "strawberry"
+];
+  
+//for (let i = 0; i <= stringArray.length; i++){
+    //console.log(i, stringArray[i])}
+
+//print reverse of this array
+//for (let i = stringArray.length - 1; i >= 0; i--){
+   // console.log(i, stringArray[i])}
+  
+
+// printing out each name in uppercase letters.  
+
+const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
+//for (let i = 0; i < people.length; i++){
+    //let f = people[i].toUpperCase();
+    //console.log(f)}
+
+//print even numbers using while loop
+//let i = 0;
+//while (i <= 100) {
+    //console.log(i += 5)}
+
+//loop through a array
+
+
