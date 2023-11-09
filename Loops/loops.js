@@ -13,7 +13,7 @@ for (let i = 0; i <= 10; i++){
 
 //Even numbers
 for (let i = 0; i <= 10; i += 2){
-    console.log(i)
+    //console.log(i)
 }
 
 //print odd numbers
@@ -89,3 +89,30 @@ const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
 //loop through a array
 
 
+//Nested for loop
+
+for (let i = 0; i < people.length; i++){
+    //console.log(i + ' This is the i', people[i])
+    for (let j = 0; j <= i; j++){
+        //console.log(j, people[j])
+    }
+
+}
+
+
+//for ... of loops 
+
+for (element of people) {
+    //console.log(element)
+}
+
+for (char of 'I am learning JS') {
+    //console.log(char)
+}
+
+//Exercise - 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (number of numbers) {
+   // let newNumber = Math.pow(number * 2)
+    console.log(number * number)
+}
