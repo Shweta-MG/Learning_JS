@@ -73,4 +73,19 @@ const animals = [
   { name: "Mittens", type: "Cat", breed: "Persian", color: "White" },
 ];
 
-console.log(animals[0].sound());
+//console.log(animals[0].sound());
+
+// try and catch
+
+const greet = (name) => {
+  try {
+    let newName = name.toUpperCase().repeat(3)
+    console.log(`${newName} is being greeted by us!!`)
+  } catch (e) {
+    //console.log(e);
+    console.log(`${name} is not a valid input.`)
+}
+}
+
+greet('Shweta');
+greet(89);
