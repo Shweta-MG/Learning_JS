@@ -51,4 +51,78 @@ const fullNames = [
 
 
 const firstName = fullNames.map(e => e.first);
-console.log(firstName);
+//console.log(firstName);
+
+//settimeout
+
+//console.log('Hello!!!!!');
+
+//setTimeout(()=> console.log('.....I am set time out'), 3000)
+
+//console.log('!!!!Hello!!!!!!');
+
+//setInterval
+ //clearInterval
+
+
+const by = bigNumbersArray.filter(n => n % 2 === 1)
+//console.log(by)
+ 
+
+
+const movies1 = [
+  {
+      title: 'Amadeus',
+      score: 99,
+      year: 1984
+  },
+  {
+      title: 'Sharknado',
+      score: 35,
+      year: 2013
+  },
+  {
+      title: '13 Going On 30',
+      score: 70,
+      year: 2004
+  },
+  {
+      title: 'Stand By Me',
+      score: 85,
+      year: 1986
+  },
+  {
+      title: 'Waterworld',
+      score: 62,
+      year: 1995
+  },
+  {
+      title: 'Jingle All The Way',
+      score: 71,
+      year: 1996
+  },
+  {
+      title: 'Parasite',
+      score: 95,
+      year: 2019
+  },
+  {
+      title: 'Notting Hill',
+      score: 77,
+      year: 1999
+  },
+  {
+      title: 'Alien',
+      score: 90,
+      year: 1979
+  }
+]
+
+//good movies
+const goodMovies = movies1.filter(e => e.score > 85)
+  .map(e => e.score);
+//console.log(goodMovies);
+
+
+
+
