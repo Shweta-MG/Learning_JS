@@ -89,3 +89,6 @@ const greet = (name) => {
 
 greet('Shweta');
 greet(89);
+
+
+//reduce f
