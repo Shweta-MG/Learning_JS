@@ -124,4 +124,4 @@ const movies = [
 const newMovie = movies.map(({ title, year, rating }) => {
       return`${title} ${year} is rater ${rating}`
   })
-console.log(newMovie)
+//console.log(newMovie)
