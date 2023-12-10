@@ -40,7 +40,7 @@ const person = {
 //console.log({ ...person, maritalStatus: 'Single' })
 const { firstName, lastName, age } = person
 
-console.log(firstName)
+//console.log(firstName)
 
 const car = {
     make: "Toyota",
@@ -65,11 +65,11 @@ const car = {
 // const make = car.make === 'const {make} = car'
 //const model = car.model === 'const {model} = model'
 const { make, model, year, color } = car 
-console.log(make)
+//console.log(make)
 
 //renaming year variable to makeYear Variable and assigning a default value
 const {year: makeYear = 'N/A'} = car
-console.log(makeYear)
+//console.log(makeYear)
 
 
 
@@ -82,3 +82,46 @@ const [gold, solver, bronze, ...everyoneElse] = score
 //console.log(everyoneElse)
 
 
+const movies = [
+    {
+      title: "Inception",
+      director: "Christopher Nolan",
+      year: 2010,
+      genre: "Sci-Fi",
+      rating: 8.8
+    },
+    {
+      title: "The Shawshank Redemption",
+      director: "Frank Darabont",
+      year: 1994,
+      genre: "Drama",
+      rating: 9.3
+    },
+    {
+      title: "Pulp Fiction",
+      director: "Quentin Tarantino",
+      year: 1994,
+      genre: "Crime",
+      rating: 8.9
+    },
+    {
+      title: "The Dark Knight",
+      director: "Christopher Nolan",
+      year: 2008,
+      genre: "Action",
+      rating: 9.0
+    },
+    {
+      title: "Forrest Gump",
+      director: "Robert Zemeckis",
+      year: 1994,
+      genre: "Drama",
+      rating: 8.8
+    }
+  ];
+  
+
+const newMovie = movies.map(({ title, year, rating }) => {
+      return`${title} ${year} is rater ${rating}`
+  })
+console.log(newMovie)
