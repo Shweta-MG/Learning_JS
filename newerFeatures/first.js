@@ -53,13 +53,25 @@ const car = {
     },
     isAutomatic: true
 };
-  
+//spreading two object into one another -- change the sequence
 //console.log({ ...person, ...car })
+//console.log({ ...car, ...person })
+
+
+
+//destructuring in JS
+// const make = car.make === 'const {make} = car'
+//const model = car.model === 'const {model} = model'
+const { make, model } = car 
+console.log(make)
+
+
 
 //destructuring in JS
 const score = [111, 122, 12232, 3435, 54646]
 const [gold, solver, bronze, ...everyoneElse] = score
-console.log(gold)
-console.log(solver)
-console.log(bronze)
-console.log(everyoneElse)
+//console.log(gold)
+//console.log(solver)
+//console.log(bronze)
+//console.log(everyoneElse)
+
