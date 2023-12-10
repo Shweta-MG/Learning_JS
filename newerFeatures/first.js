@@ -38,7 +38,9 @@ const person = {
 };
   
 //console.log({ ...person, maritalStatus: 'Single' })
+const { firstName, lastName, age } = person
 
+console.log(firstName)
 
 const car = {
     make: "Toyota",
@@ -62,8 +64,12 @@ const car = {
 //destructuring in JS
 // const make = car.make === 'const {make} = car'
 //const model = car.model === 'const {model} = model'
-const { make, model } = car 
+const { make, model, year, color } = car 
 console.log(make)
+
+//renaming year variable to makeYear Variable and assigning a default value
+const {year: makeYear = 'N/A'} = car
+console.log(makeYear)
 
 
 
@@ -74,4 +80,5 @@ const [gold, solver, bronze, ...everyoneElse] = score
 //console.log(solver)
 //console.log(bronze)
 //console.log(everyoneElse)
+
 
