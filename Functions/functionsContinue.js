@@ -80,10 +80,10 @@ const animals = [
 const greet = (name) => {
   try {
     let newName = name.toUpperCase().repeat(3)
-    console.log(`${newName} is being greeted by us!!`)
+    //console.log(`${newName} is being greeted by us!!`)
   } catch (e) {
     //console.log(e);
-    console.log(`${name} is not a valid input.`)
+   // console.log(`${name} is not a valid input.`)
 }
 }
 
@@ -91,4 +91,26 @@ greet('Shweta');
 greet(89);
 
 
-//reduce f
+//reduce functions
+/*
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 12, 12, 12, 12];
+const totalNumber = numbers.reduce((total, number) => {
+  return total + number
+})
+
+console.log(totalNumber);
+
+
+ */
+
+const numbers = [ 12, 3, 4, 5, 1, 6, 7, 8, 9, 10, 12, 12, 12, 12, 12];
+const totalNumber = numbers.reduce((total, number) => total + number)
+//console.log(totalNumber);
+
+const minNumber = numbers.reduce((min, number) => {
+  if (number < min) {
+    return number;
+  }
+  return min;
+});
+//console.log(minNumber)
