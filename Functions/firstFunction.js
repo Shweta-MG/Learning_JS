@@ -96,7 +96,8 @@ const arrayValue = (array) => {
 
 
 //return day of the week
-const daysOfWeek = ['Null', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const daysOfWeek = [Null, 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
 const weekDay = (num) => {
     let weekDayAsked = '';
     for (let i = 0; i < daysOfWeek.length; i++){
@@ -112,3 +113,25 @@ console.log(weekDay(2));
 console.log(weekDay(3));
 console.log(weekDay(4));
 console.log(weekDay(5));
+
+
+const daysOfWeek1 = [null, 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+function returnDay(e) {
+    
+    let weekDayAsked = '';
+    let num = daysOfWeek.length;
+    if (e < 0 || e >= num){
+        weekDayAsked = daysOfWeek1[0];
+    } else {
+        weekDayAsked = daysOfWeek1[e];
+    }    
+
+    console.log(weekDayAsked);
+    
+}
+
+returnDay(55);
+returnDay(-45)
+returnDay(8)
+returnDay(0)
