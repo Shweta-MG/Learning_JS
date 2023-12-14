@@ -3,7 +3,7 @@ let input = document.querySelector("#input");
 let list = document.querySelector("#list");
 const submitForm = (e) => {
   e.preventDefault();
-  const animalName = input.value;
+  let animalName = input.value;
   const newLi = document.createElement("li");
 
   if (animalName.trim() !== "") {
