@@ -12,3 +12,10 @@ const mouse = () => {
     console.log('You triggered with enter button!!')
 }
 btn_mouseover.onmouseover  = mouse;
+
+
+const eventListern = document.querySelector('.eventListern');
+const clicked = () => {
+    console.log('I am adding the event listener')
+}
+eventListern.addEventListener('click', clicked)
