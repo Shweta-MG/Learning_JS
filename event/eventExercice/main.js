@@ -13,6 +13,9 @@ let randomNumber = () => {
     para.innerText = rgb  
     console.log('I am changing background color')
 
+    colorGenerator.style.color = `rgb(${r + 30}, ${g + 30}, ${b + 30})`;
+    colorGenerator.innerText = `rgb(${r + 30}, ${g + 30}, ${b + 30})`
+
 }
 
 colorGenerator.addEventListener('click', randomNumber);
