@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Score Keeper</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="image">
-
-
-        </div>
-        <div class="scoreBoard">
-            <h1><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></h1>            
-
-        </div>
-        <div class="playerDetails">
-
-        </div>
-        <div class="scoreButtons">
-            <button class="playerOne"> Player One </button>
-            <button class="playerTwo"> Player Two</button>
-            <button class="Reset"> Reset</button>
-        </div>
+      <div class="winningScoreSelection">
+        <select name="scoreSelection" id="scoreSelection">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+          <option value="35">35</option>
+          <option value="40">40</option>
+        </select>
+      </div>
+      <div class="scoreBoard">
+        <h1>
+          <span id="playerOneScore">0</span> to
+          <span id="playerTwoScore">0</span>
+        </h1>
+      </div>
+      <div class="playerDetails"></div>
+      <div class="scoreButtons">
+        <button class="playerOne">Player One</button>
+        <button class="playerTwo">Player Two</button>
+        <button class="Reset">Reset</button>
+      </div>
     </div>
-    
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
