@@ -21,7 +21,7 @@ body{
     border: 2px solid orange;
     padding: 20px;
 }
-.image{
+.winningScoreSelection{
     height: 200px;
     width: 90%;
 }
@@ -34,4 +34,12 @@ body{
 button {
     height: 50px;
     width: 150px;
+}
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
 }
