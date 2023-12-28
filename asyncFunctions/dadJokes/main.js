@@ -20,6 +20,9 @@ const jokeBtn = document.querySelector(".jokeBtn");
  };
  */
 
+
+
+
 /**
   * 
  const getJoke = async () => {
@@ -43,6 +46,7 @@ jokeBtn.addEventListener("click", getJoke);
   */
 
 
+//New way of dad jokes written using two async functions
 
 
 const addNewJoke = async () => {
@@ -53,17 +57,21 @@ const addNewJoke = async () => {
 
 const getJoke = async () => {
   //declare the header for the API fetching as a variable
-  configHeader = {
-    headers: {
-      Accept: "application/json",
-    },
-  };
-
-  // fetch the data from API and update
-  const res = await fetch("https://icanhazdadjoke.com/", configHeader);
-  const data = await res.json();
-  console.log(data.joke);
-  return data.joke;
+  try {
+    configHeader = {
+      headers: {
+        Accept: "application/json",
+      },
+    };
+  
+    // fetch the data from API and update
+    const res = await fetch("https://icanhazdadjoke.com/", configHeader);
+    const data = await res.json();
+    console.log(data.joke);
+    return data.joke;    
+  } catch (e) {
+    return "No jokes available!!! Sorry!!! "
+  }
 };
 
 jokeBtn.addEventListener("click", addNewJoke);
