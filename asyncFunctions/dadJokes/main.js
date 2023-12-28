@@ -20,7 +20,9 @@ const jokeBtn = document.querySelector(".jokeBtn");
  };
  */
 
-const getJoke = async () => {
+/**
+  * 
+ const getJoke = async () => {
   //declare the header for the API fetching as a variable
   configHeader = {
     headers: {
@@ -37,3 +39,31 @@ const getJoke = async () => {
 };
 
 jokeBtn.addEventListener("click", getJoke);
+  * 
+  */
+
+
+
+
+const addNewJoke = async () => {
+  const jokeText = await getJoke();
+  console.log(jokeText);
+  jokeContainer.innerHTML = jokeText;
+};
+
+const getJoke = async () => {
+  //declare the header for the API fetching as a variable
+  configHeader = {
+    headers: {
+      Accept: "application/json",
+    },
+  };
+
+  // fetch the data from API and update
+  const res = await fetch("https://icanhazdadjoke.com/", configHeader);
+  const data = await res.json();
+  console.log(data.joke);
+  return data.joke;
+};
+
+jokeBtn.addEventListener("click", addNewJoke);
